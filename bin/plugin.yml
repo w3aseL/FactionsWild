@@ -1,0 +1,20 @@
+name: FactionsWild
+version: 0.0.1
+author: Noah Templet <contact@noahtemplet.dev>
+main: gg.weasel.mc.FactionsWild.FactionsWildMain
+depend: [Factions]
+permissions:
+  factionswild.*:
+    description: General all-use for FactionsWild
+    default: op
+    children:
+      factionswild.use: true
+  factionswild.use:
+    description: Allows use of /factionswild
+    default: false
+commands:
+  factionswild:
+    usage: /factionswild
+    aliases: [f_wild, fwild]
+    description: Teleports you to a random location in the wild!
+    permission: factionswild.use
